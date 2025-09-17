@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Mi Portafolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Estilo embebido como pide el enunciado -->
+  <style>
+    :root{--bg:#0b1220;--panel:#101827;--muted:#9ca3af;--brand:#60a5fa}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:#e5e7eb}
+    header,footer{background:#111827;padding:1rem 1.2rem}
+    header h1{margin:.2rem 0}
+    nav a{color:var(--brand);text-decoration:none;margin-right:1rem}
+    main{max-width:1100px;margin:auto;padding:1.2rem}
+    section{background:var(--panel);border:1px solid #1f2937;border-radius:12px;margin:1rem 0;padding:1rem}
+    .grid{display:grid;gap:14px}
+    .grid-3{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+    figure{margin:0;background:#0f172a;border:1px solid #1f2937;border-radius:10px;overflow:hidden}
+    figure img{width:100%;display:block}
+    figcaption{padding:.6rem;color:var(--muted);font-size:.9rem}
+    form label{display:block;margin:.6rem 0 .2rem}
+    input,textarea{width:100%;padding:.65rem;border-radius:8px;border:1px solid #334155;background:#0f172a;color:#e5e7eb}
+    textarea{min-height:120px;resize:vertical}
+    .btns{display:flex;gap:.6rem;margin-top:.6rem}
+    button{cursor:pointer;border:1px solid #374151;background:#1f2937;color:#e5e7eb;border-radius:8px;padding:.55rem .9rem}
+    footer{font-size:.9rem;color:#94a3b8;text-align:center}
+    .muted{color:#94a3b8}
+  </style>
+</head>
+<body>
+  <!-- Encabezado + navegación -->
+  <header>
+    <h1>Mi Portafolio</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Presentación -->
+    <section id="inicio">
+      <h2>¡Hola! Soy Diego</h2>
+      <p class="muted">Desarrollador en formación. Me gusta aprender tecnologías web y crear interfaces limpias.</p>
+      <ul>
+        <li>Interés por Frontend y UX</li>
+        <li>HTML, CSS y bases de JavaScript</li>
+        <li>Curioso por accesibilidad y rendimiento</li>
+      </ul>
+      <img src="img/daw.png" alt="Foto/Avatar" width="200" height="auto">
+    </section>
+
+    <!-- Galería multimedia -->
+    <section id="galeria">
+      <h2>Galería</h2>
+      <div class="grid grid-3">
+        <figure>
+          <img src="https://picsum.photos/seed/a/600/400" alt="Imagen A">
+          <figcaption>Proyecto A</figcaption>
+        </figure>
+        <figure>
+          <img src="https://picsum.photos/seed/b/600/400" alt="Imagen B">
+          <figcaption>Proyecto B</figcaption>
+        </figure>
+        <figure>
+          <img src="https://picsum.photos/seed/c/600/400" alt="Imagen C">
+          <figcaption>Proyecto C</figcaption>
+        </figure>
+      </div>
+
+      <h3>Video</h3>
+      <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        title="YouTube video"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+      <h3>Audio</h3>
+      <audio controls>
+        <source src="https://www2.cs.uic.edu/~i101/SoundFiles/StarWars60.wav" type="audio/wav">
+        Tu navegador no soporta audio.
+      </audio>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form>
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required>
+
+        <label for="email">Correo</label>
+        <input id="email" name="email" type="email" placeholder="tucorreo@ejemplo.com" required>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje"></textarea>
+
+        <div class="btns">
+          <button type="submit">Enviar</button>
+          <button type="reset">Limpiar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    Diego · <a class="muted" href="mailto:tu-correo@ejemplo.com">tu-correo@ejemplo.com</a> · <span id="y"></span>
+  </footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
