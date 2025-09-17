@@ -42,7 +42,7 @@
   <main>
     <!-- Presentación -->
     <section id="inicio">
-      <h2>¡Hola! Soy Diego A.</h2>
+      <h2>¡Hola! Soy Diego Abisay </h2>
       <p class="muted">Estoy aprendiendo a programar y me esta gustando mucho todo lo que aprendo y aplico </p>
       <ul>
         <h3>Intereses</h3>
@@ -50,38 +50,43 @@
         <li>La Programacion</li>
         <li>Los Videojuegos</li>
       </ul>
-      <img src="images/images/FotoPerfil.png" alt="Foto/Perfil" width="200" height="auto">
+      <img src="images/images/FotoPerfil.jpeg" alt="Foto/Perfil" width="200" height="auto">
     </section>
 
     <!-- Galería multimedia -->
-    <section id="galeria">
+    <section id="Galeria de fotitos">
       <h2>Galería</h2>
       <div class="grid grid-3">
         <figure>
-          <img src="https://picsum.photos/seed/a/600/400" alt="Imagen A">
+          <img src="https://picsum.photos/seed/a/600/400" alt="Imagen 1">
           <figcaption>Proyecto A</figcaption>
         </figure>
         <figure>
-          <img src="https://picsum.photos/seed/b/600/400" alt="Imagen B">
+          <img src="https://picsum.photos/seed/b/600/400" alt="Imagen 2">
           <figcaption>Proyecto B</figcaption>
         </figure>
         <figure>
-          <img src="https://picsum.photos/seed/c/600/400" alt="Imagen C">
+          <img src="https://picsum.photos/seed/c/600/400" alt="Imagen 3">
           <figcaption>Proyecto C</figcaption>
         </figure>
       </div>
 
       <h3>Video</h3>
-      <iframe width="560" height="315"
-        src="https://www.youtube.com/watch?v=a1Femq4NPxs&list=RDa1Femq4NPxs&start_radio=1&pp=ygURYmFpbGUgaW5vbHZpZGFibGWgBwE%3D"
-        title="YouTube video musical"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+      <iframe 
+         width="560"
+         height="315"
+         src="https://www.youtube.com/embed/a1Femq4NPxs?list=RDa1Femq4NPxs"
+         title="YouTube video musical"
+         frameborder="0"
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+         allowfullscreen>
+        </iframe>
 
       <h3>Audio</h3>
-      <audio controls>
-        <source src="https://www2.cs.uic.edu/~i101/SoundFiles/StarWars60.wav" type="audio/wav">
-        Tu navegador no soporta audio.
+      <audio controls preload="metadata">
+      <source src="https://interactive-examples.mdn.mozilla.org/media/cc0-audio/t-rex-roar.mp3" type="audio/mpeg">
+      <source src="https://interactive-examples.mdn.mozilla.org/media/cc0-audio/t-rex-roar.ogg" type="audio/ogg">
+      Tu navegador no soporta audio HTML5.
       </audio>
     </section>
 
@@ -93,7 +98,7 @@
         <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required>
 
         <label for="email">Correo</label>
-        <input id="email" name="email" type="email" placeholder="tucorreo@ejemplo.com" required>
+        <input id="email" name="email" type="email" placeholder="tu123correo@ejemplo.com" required>
 
         <label for="Deja tu mensaje">Mensaje</label>
         <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje"></textarea>
