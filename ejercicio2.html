@@ -45,12 +45,63 @@
     font-size: 0.9rem;
     color: #555;
   }
+  /* ---------- para darle estilo al formulariovy se vea bien---------- */
+#contacto form{
+  max-width: 620px;
+  margin: 0 auto;                  /* centrar */
+  background: #ffffff;             /* fondo blanco */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 16px 18px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.05);
+  display: flex;
+  flex-direction: column;          /* campos uno debajo de otro */
+  gap: 12px;                       /* espacio  */
+}
+#contacto label{
+  font-weight: 600;
+}
+#contacto input,
+#contacto textarea{
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font: inherit;                   /* mismo estilo que el body */
+  outline: none;
+  background: #fff;
+  color: #000;
+}
+#contacto textarea{
+  min-height: 120px;
+  resize: vertical;
+}
+#contacto input:focus,
+#contacto textarea:focus{
+  border-color: #0073e6;
+  box-shadow: 0 0 0 3px rgba(0,115,230,.15);
+}
+#contacto .btns{
+  display: flex;
+  gap: 10px;
+  margin-top: 4px;
+}
+#contacto button{
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: .6rem 1rem;
+  background: #0073e6;
+  color: #fff;
+}
+#contacto button[type="reset"]{
+  background: #6b7280;             /* gris para el botoncito */
+}
 </style>
 
 
 </head>
 <body>
-  <!-- Encabezado + navegación -->
   <header>
     <h1>Mi Portafolio </h1>
     <nav>
@@ -61,7 +112,6 @@
   </header>
 
   <main>
-    <!-- Presentación -->
     <section id="inicio">
       <h2>¡Hola! Soy Diego Abisay </h2>
       <p class="muted">Estoy aprendiendo a programar y me esta gustando mucho todo lo que aprendo y aplico </p>
@@ -74,20 +124,20 @@
       <img src="images/images/FotoPerfil.jpeg" alt="Foto/Perfil" width="200" height="auto">
     </section>
 
-    <!-- Galería multimedia -->
+    <!-- Galería  -->
     <section id="Galeria de fotitos">
       <h2>Galería</h2>
   <div class="galeria">
     <figure>
-      <img src="foto1.jpg" alt="Foto 1">
+      <img src="images/images/foto1.jpg" alt="Foto 1">
       <figcaption>Foto I</figcaption>
     </figure>
     <figure>
-      <img src="foto2.jpg" alt="Foto 2">
+      <img src="images/images/foto2.jpg" alt="Foto 2">
       <figcaption>Foto II</figcaption>
     </figure>
     <figure>
-      <img src="foto3.jpg" alt="Foto 3">
+      <img src="images/images/foto3.jpg" alt="Foto 3">
       <figcaption>Foto III</figcaption>
     </figure>
   </div>
@@ -115,8 +165,8 @@
     <section id="contacto">
       <h2>Contacto</h2>
       <form>
-        <label for="nombre">Nombre</label>
-        <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required>
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje"></textarea>
 
         <label for="email">Correo</label>
         <input id="email" name="email" type="email" placeholder="tu123correo@ejemplo.com" required>
