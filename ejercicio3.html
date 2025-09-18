@@ -6,20 +6,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="styles.css" rel="stylesheet">
   <style>
-    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;background:#0b1220;color:#e5e7eb}
-    a{color:#60a5fa}
-    header,footer{background:#111827;padding:1rem}
-    main{max-width:1000px;margin:auto;padding:1rem}
-    .layout{display:grid;grid-template-columns:2fr 1fr;gap:18px}
-    .panel{background:#0f172a;border:1px solid #1f2937;border-radius:12px;padding:1rem}
-    .muted{color:#94a3b8}
-    .tags a{margin-right:.5rem}
-    .thumbs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-    .thumbs img{width:100%;height:92px;object-fit:cover;border-radius:8px}
-    .reviews article{border-top:1px dashed #243244;padding:.75rem 0}
-    nav.breadcrumb{font-size:.9rem;margin:.5rem 0 1rem}
-    .title h1{margin:.4rem 0}
-  </style>
+  body {
+    margin: 0;
+    background: #ffffff; /* Fondo blanco */
+    color: #000000; /* Texto negro */
+  }
+  a {
+    color: #0000ee; /* Azul clásico de enlace */
+  }
+  header, footer {
+    background: #f0f0f0; /* Un gris claro para contraste */
+    padding: 1rem;
+  }
+  main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 1rem;
+  }
+  .layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 18px;
+  }
+  .panel {
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 12px;
+    padding: 1rem;
+  }
+  .muted {
+    color: #555555;
+  }
+  .tags a {
+    margin-right: 0.5rem;
+  }
+  .thumbs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+  .thumbs img {
+    width: 100%;
+    height: 92px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  .reviews article {
+    border-top: 1px dashed #cccccc;
+    padding: 0.75rem 0;
+  }
+  nav.breadcrumb {
+    font-size: 0.9rem;
+    margin: 0.5rem 0 1rem;
+  }
+  .title h1 {
+    margin: 0.4rem 0;
+    font-size: 2rem; /* Tamaño más grande */
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  p, li {
+    font-size: 1rem;
+  }
+</style>
 </head>
 <body>
   <header>
